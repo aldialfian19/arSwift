@@ -9,18 +9,22 @@
 /* Begin PBXBuildFile section */
 		CB08EC77291593AE000A2A23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB08EC76291593AE000A2A23 /* AppDelegate.swift */; };
 		CB08EC79291593AE000A2A23 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB08EC78291593AE000A2A23 /* ContentView.swift */; };
-		CB08EC7B291593AE000A2A23 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = CB08EC7A291593AE000A2A23 /* Experience.rcproject */; };
 		CB08EC7D291593AF000A2A23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB08EC7C291593AF000A2A23 /* Assets.xcassets */; };
 		CB08EC80291593AF000A2A23 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB08EC7F291593AF000A2A23 /* Preview Assets.xcassets */; };
+		CB08EC8A29159D9F000A2A23 /* vintagerobot.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CB08EC8829159D9F000A2A23 /* vintagerobot.usdz */; };
+		CB08EC8C2915A158000A2A23 /* drummertoy.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CB08EC8B2915A158000A2A23 /* drummertoy.usdz */; };
+		CB08EC8E2916BB66000A2A23 /* ModelAR.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB08EC8D2916BB66000A2A23 /* ModelAR.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CB08EC73291593AE000A2A23 /* arSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = arSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB08EC76291593AE000A2A23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB08EC78291593AE000A2A23 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		CB08EC7A291593AE000A2A23 /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
 		CB08EC7C291593AF000A2A23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB08EC7F291593AF000A2A23 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CB08EC8829159D9F000A2A23 /* vintagerobot.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = vintagerobot.usdz; sourceTree = "<group>"; };
+		CB08EC8B2915A158000A2A23 /* drummertoy.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = drummertoy.usdz; sourceTree = "<group>"; };
+		CB08EC8D2916BB66000A2A23 /* ModelAR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelAR.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +41,8 @@
 		CB08EC6A291593AE000A2A23 = {
 			isa = PBXGroup;
 			children = (
+				CB08EC8D2916BB66000A2A23 /* ModelAR.swift */,
+				CB08EC8629159D1B000A2A23 /* Model */,
 				CB08EC75291593AE000A2A23 /* arSwift */,
 				CB08EC74291593AE000A2A23 /* Products */,
 			);
@@ -55,7 +61,6 @@
 			children = (
 				CB08EC76291593AE000A2A23 /* AppDelegate.swift */,
 				CB08EC78291593AE000A2A23 /* ContentView.swift */,
-				CB08EC7A291593AE000A2A23 /* Experience.rcproject */,
 				CB08EC7C291593AF000A2A23 /* Assets.xcassets */,
 				CB08EC7E291593AF000A2A23 /* Preview Content */,
 			);
@@ -68,6 +73,15 @@
 				CB08EC7F291593AF000A2A23 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CB08EC8629159D1B000A2A23 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CB08EC8B2915A158000A2A23 /* drummertoy.usdz */,
+				CB08EC8829159D9F000A2A23 /* vintagerobot.usdz */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,8 +142,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB08EC8A29159D9F000A2A23 /* vintagerobot.usdz in Resources */,
 				CB08EC80291593AF000A2A23 /* Preview Assets.xcassets in Resources */,
 				CB08EC7D291593AF000A2A23 /* Assets.xcassets in Resources */,
+				CB08EC8C2915A158000A2A23 /* drummertoy.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,8 +157,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB08EC79291593AE000A2A23 /* ContentView.swift in Sources */,
+				CB08EC8E2916BB66000A2A23 /* ModelAR.swift in Sources */,
 				CB08EC77291593AE000A2A23 /* AppDelegate.swift in Sources */,
-				CB08EC7B291593AE000A2A23 /* Experience.rcproject in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +287,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"arSwift/Preview Content\"";
+				DEVELOPMENT_TEAM = 4M5F5S23L2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
@@ -301,6 +318,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"arSwift/Preview Content\"";
+				DEVELOPMENT_TEAM = 4M5F5S23L2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
